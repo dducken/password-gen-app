@@ -67,7 +67,6 @@ const Main = () => {
 
     if(xs.length === 0){
         Swal.fire({
-            position: 'mid',
             icon: 'info',
             title: 'You must select one option',
             showConfirmButton: false,
@@ -139,7 +138,7 @@ const handleSymbol = () => {
 const [actualTime, setActualTime] = useState([]);
 
 
-var interval = setInterval(function () {
+setInterval(function () {
     
   setActualTime(new Date().toTimeString().replace(/.*(\d{2}:\d{2}:\d{2}).*/, "$1"));
 
